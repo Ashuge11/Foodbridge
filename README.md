@@ -29,20 +29,6 @@ override the declared server dependencies. Install packages from server, not ser
 Do not run the seed again to apply these fixes. Existing passwords remain unchanged.
 Seeded development accounts use FoodBridge@123 only if their passwords were never changed.
 
-## New setup
-
-Use Node.js 22 or 24 and MongoDB Community Server or Atlas. No Docker,
-replica set or transactions are required. Run npm.cmd install --workspaces=false
-separately inside server and client.
-
-Copy server/.env.example to server/.env and client/.env.example to client/.env.
-For local MongoDB use mongodb://127.0.0.1:27017/foodbridge.
-For your existing Atlas database preserve its actual database name (Foodbgidge).
-Set a random JWT_SECRET of at least 32 characters. Configure Atlas database access
-and network access for the machine running the backend.
-Run npm.cmd run seed in server only if you want development fixtures.
-Seed files are fictional demo data.
-
 ## UI and inbox update
 
 - Redesigned dashboard welcome banners, notification center and category illustrations.
